@@ -1,0 +1,14 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  margin: 0 auto;
+  text-align: center;
+  background-color: black;
+}
+#main {
+  height: 4372px;
+  background: url("blizzard.jpg") no-repeat;
+  background-size: cover;
+}
