@@ -41,4 +41,33 @@ button {
   background-color: transparent;
   border: 0;
 }
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 7px 14px;
+  border: 1px solid #fff;
+  border-radius: 2px;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #00aeff;
+}
+
+.btn-primary {
+  background-color: #00aeff;
+  border: 1px solid #00aeff;
+  margin-left: 10px;
+}
+
+.btn-primary:hover {
+  background-color: #50c8ff;
+  color: #fff;
+}
+
+.btn-primary img {
+  margin-right: 5px;
+}
 /*# sourceMappingURL=global.css.map */

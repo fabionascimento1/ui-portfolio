@@ -33,29 +33,8 @@
     margin-left: auto;
     align-items: center;
 
-    .btn {
+    .btn-ctas {
       display: flex;
-      padding: 7px 14px;
-      border: 1px solid $primaryColor;
-      border-radius: 2px;
-
-      &:hover {
-        background-color: $primaryColor;
-        color: $secondaryColor;
-      }
-    }
-    .btn-primary {
-      background-color: $secondaryColor;
-      border: 1px solid $secondaryColor;
-      margin-left: 10px;
-
-      &:hover {
-        background-color: $secondaryColorHover;
-        color: $primaryColor;
-      }
-      img {
-        margin-right: 5px;
-      }
     }
     .btn-mobile {
       display: none;
@@ -86,6 +65,78 @@
       .btn-mobile {
         display: block;
         margin-left: 0px;
+      }
+    }
+  }
+}
+
+.menu-mobile {
+  display: none;
+  nav {
+    ul {
+      li {
+        margin: 20px 0;
+        a {
+          display: flex;
+          img {
+            margin-left: 12px;
+          }
+        }
+      }
+    }
+  }
+  a {
+    cursor: pointer;
+  }
+  .close {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    font-size: 22px;
+    padding: 10px;
+
+    &:hover {
+      background-color: $secondaryColor;
+      border-radius: 30px;
+    }
+  }
+}
+
+.menu-mobile-active {
+  display: block;
+  position: fixed;
+  right: 0;
+  top: 0;
+
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  aside {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 33%;
+    height: 100%;
+    background-color: #000;
+    padding-top: 4%;
+    padding-left: 1.5rem;
+    padding-top: 14%;
+    .btn-ctas {
+      a {
+        margin-right: 10px;
+      }
+      .btn-ctas {
+        flex-direction: column;
+      }
+      .btn-primary {
+        flex-direction: row;
+        margin: 15px 10px 0 0;
       }
     }
   }
