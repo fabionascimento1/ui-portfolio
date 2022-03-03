@@ -1,0 +1,41 @@
+$primaryColor: #fff;
+$secondaryColor: #00aeff;
+$black: #000;
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  color: $primaryColor;
+}
+
+body {
+  background-color: $black;
+}
+
+html {
+  font-size: 16px;
+  overflow-x: hidden;
+
+  @media (max-width: 1080px) {
+    font-size: 93.75%; //15
+  }
+  @media (max-width: 720px) {
+    font-size: 87.5%; //14
+  }
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+}
