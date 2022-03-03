@@ -1,2 +1,54 @@
 @import "global.scss";
 @import "container.scss";
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 21px 0px;
+
+  nav {
+    margin-left: 145px;
+    ul {
+      display: flex;
+
+      li {
+        margin-right: 20px;
+        a {
+          display: flex;
+          font-size: 14px;
+          img {
+            margin-left: 10px;
+          }
+          &:hover {
+            opacity: 0.9;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  .menu {
+    display: flex;
+    margin-left: auto;
+
+    .btn {
+      display: flex;
+      padding: 7px 14px;
+      border: 1px solid $primaryColor;
+      border-radius: 2px;
+    }
+    .btn-primary {
+      background-color: $secondaryColor;
+      border: 1px solid $secondaryColor;
+      margin-left: 10px;
+      img {
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .btn-mobile {
+    display: none;
+  }
+}

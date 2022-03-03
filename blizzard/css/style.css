@@ -54,4 +54,74 @@ button {
     max-width: 1246px;
   }
 }
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 21px 0px;
+}
+
+.header nav {
+  margin-left: 145px;
+}
+
+.header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header nav ul li {
+  margin-right: 20px;
+}
+
+.header nav ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+}
+
+.header nav ul li a img {
+  margin-left: 10px;
+}
+
+.header nav ul li a:hover {
+  opacity: 0.9;
+  text-decoration: underline;
+}
+
+.header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+}
+
+.header .menu .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 7px 14px;
+  border: 1px solid #fff;
+  border-radius: 2px;
+}
+
+.header .menu .btn-primary {
+  background-color: #00aeff;
+  border: 1px solid #00aeff;
+  margin-left: 10px;
+}
+
+.header .menu .btn-primary img {
+  margin-right: 5px;
+}
+
+.header .btn-mobile {
+  display: none;
+}
 /*# sourceMappingURL=style.css.map */
