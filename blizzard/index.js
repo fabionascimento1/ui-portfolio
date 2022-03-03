@@ -1,19 +1,19 @@
 const Header = (
-  <header>Header 4343</header>
+    <header>
+      <div className='container'>Header</div>
+    </header>
 )
 
 const Footer = (
-  <header>Footer 1234</header>
+  <header className="footer">Footer 1234</header>
 )
 
 const page = (
-    <div>
-        {Header}
-        <div className="footer">{Footer} </div>
-    </div>
+  <div>
+    {Header}
+    {Footer}
+  </div>
 )
-
-console.log(page)
 
 ReactDOM.render(
     page,
