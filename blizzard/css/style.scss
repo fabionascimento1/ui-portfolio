@@ -37,11 +37,21 @@
       padding: 7px 14px;
       border: 1px solid $primaryColor;
       border-radius: 2px;
+
+      &:hover {
+        background-color: $primaryColor;
+        color: $secondaryColor;
+      }
     }
     .btn-primary {
       background-color: $secondaryColor;
       border: 1px solid $secondaryColor;
       margin-left: 10px;
+
+      &:hover {
+        background-color: $secondaryColorHover;
+        color: $primaryColor;
+      }
       img {
         margin-right: 5px;
       }

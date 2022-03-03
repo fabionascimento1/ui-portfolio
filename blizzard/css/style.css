@@ -111,10 +111,20 @@ button {
   border-radius: 2px;
 }
 
+.header .menu .btn:hover {
+  background-color: #fff;
+  color: #00aeff;
+}
+
 .header .menu .btn-primary {
   background-color: #00aeff;
   border: 1px solid #00aeff;
   margin-left: 10px;
+}
+
+.header .menu .btn-primary:hover {
+  background-color: #50c8ff;
+  color: #fff;
 }
 
 .header .menu .btn-primary img {
