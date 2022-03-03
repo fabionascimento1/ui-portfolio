@@ -4,7 +4,7 @@
 .header {
   display: flex;
   align-items: center;
-  padding: 21px 0px;
+  padding: 25px 0px;
 
   nav {
     margin-left: 145px;
@@ -31,6 +31,7 @@
   .menu {
     display: flex;
     margin-left: auto;
+    align-items: center;
 
     .btn {
       display: flex;
@@ -56,9 +57,36 @@
         margin-right: 5px;
       }
     }
+    .btn-mobile {
+      display: none;
+    }
   }
 
-  .btn-mobile {
-    display: none;
+  @media (max-width: 1024px) {
+    nav {
+      display: none;
+    }
+    .menu {
+      .btn-mobile {
+        display: block;
+        margin-left: 120px;
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    nav {
+      display: none;
+    }
+    .menu {
+      .btn,
+      .btn-primary {
+        display: none;
+      }
+      .btn-mobile {
+        display: block;
+        margin-left: 0px;
+      }
+    }
   }
 }
