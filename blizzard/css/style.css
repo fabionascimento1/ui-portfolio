@@ -305,4 +305,52 @@ button {
   width: 19px !important;
   right: 11 !important;
 }
+
+.s-games__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.s-games__header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.s-games__header ul li {
+  margin-right: 20px;
+}
+
+.s-games__header ul li .active img {
+  opacity: 1;
+}
+
+.s-games__header ul li a {
+  cursor: pointer;
+}
+
+.s-games__header ul li a img {
+  opacity: 0.5;
+}
+
+.s-games__header ul li a img:hover {
+  opacity: 1;
+}
+
+.s-games__header__allgames {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.s-games__header__allgames img {
+  margin-right: 10px;
+}
 /*# sourceMappingURL=style.css.map */

@@ -1,3 +1,39 @@
 @import "global.scss";
 @import "container.scss";
 @import "header.scss";
+
+.s-games {
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    ul {
+      display: flex;
+      li {
+        margin-right: 20px;
+
+        .active img {
+          opacity: 1;
+        }
+        a {
+          cursor: pointer;
+
+          img {
+            opacity: 0.5;
+
+            &:hover {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+    &__allgames {
+      display: flex;
+      img {
+        margin-right: 10px;
+      }
+    }
+  }
+}

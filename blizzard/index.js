@@ -93,6 +93,42 @@ const Header = (
     </header>
 )
 
+const Sgames = (
+  <section className='s-games'>
+    <div className='container'>
+      <div className='s-games__header'>
+        <h2>Jogos exclusivos</h2>
+        <ul>
+          <li>
+            <a href="#" className="active">
+                <img src="./assets/icon-logo.svg" alt="Battle net" />
+            </a>
+          </li>
+          <li>
+              <a href="#">
+                  <img src="./assets/nintendo.svg" alt="Nintendo" />
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <img src="./assets/icon-xbox.svg" alt="XBOX" />
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <img src="./assets/ps.svg" alt="Playstion" />
+              </a>
+          </li>
+        </ul>
+        <a href="" className="s-games__header__allgames">
+            <img src="./assets/ver-todos.svg" alt="Ver todos" />
+            Ver todos jogos
+        </a>
+      </div>
+    </div>
+  </section>
+)
+
 const Footer = (
   <footer>
     <div className='container'>footer</div>
@@ -103,6 +139,7 @@ const page = (
   <div>
     {menuMobile}
     {Header}
+    {Sgames}
     {Footer}
   </div>
 )
