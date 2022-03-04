@@ -141,6 +141,7 @@ button {
 }
 
 .header .menu .menu-toggle {
+  display: none;
   width: 19px;
   height: 20px;
   margin-left: 150px;
@@ -187,7 +188,7 @@ button {
   .header nav {
     display: none;
   }
-  .header .menu .btn-mobile {
+  .header .menu .menu-toggle {
     display: block;
     margin-left: 120px;
   }
