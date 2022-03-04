@@ -1,11 +1,17 @@
+let EventLoop = 0
 function menuActive(){
   const menu = document.getElementById('menu-mobile')
-  menu.classList.add('menu-mobile-active')
-}
-
-function closeMenu(){
-  const menu = document.getElementById('menu-mobile')
-  menu.classList.remove('menu-mobile-active')
+  const btnMenuToggle = document.getElementById('btn-menu-toggle')
+  
+  if(EventLoop == 0){   
+    menu.classList.add('menu-mobile-active')
+    btnMenuToggle.title = 'close menu'
+    EventLoop = 1
+  } else {
+    menu.classList.remove('menu-mobile-active')
+    btnMenuToggle.title = 'open menu'
+    EventLoop = 0
+  }
 }
 
 const menu = (
@@ -55,7 +61,6 @@ const menuMobile = (
   <div className='menu-mobile' id='menu-mobile'>
     <div className='overlay'>
       <aside>
-        <a onClick={closeMenu} alt='Close menu' className='close' id="close">X</a>
         {menu}
         <div className='btn-ctas'>{btnCTAs}</div>
       </aside>
@@ -73,9 +78,12 @@ const Header = (
           {menu}
           <div className='menu'>
             {btnCTAs}
-            <a onClick={menuActive} href="#" className="btn-mobile" id="js-btn-menu-mobile">
-              <img src="./assets/icon-hamburguer.svg" alt="botão menu" title="botão menu" />
-            </a>
+            <div className='menu-toggle' id='div-menu-toogle'>
+              <button id='btn-menu-toggle' onClick={menuActive} type='button' title='open menu'>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
           </div>
         </div>
       </div>

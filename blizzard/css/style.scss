@@ -36,8 +36,46 @@
     .btn-ctas {
       display: flex;
     }
-    .btn-mobile {
-      display: none;
+    .menu-toggle {
+      width: 19px;
+      height: 20px;
+      margin-left: 150px;
+
+      button {
+        position: relative;
+        width: 19px;
+        height: 20px;
+
+        &:hover {
+          span {
+            background-color: $secondaryColor;
+            &:nth-child(1) {
+              width: 15px;
+            }
+            &:nth-child(2) {
+              width: 19px;
+            }
+          }
+        }
+
+        span {
+          background-color: $primaryColor;
+          position: absolute;
+
+          &:nth-child(1) {
+            top: 0;
+            right: 0;
+            width: 19px;
+            height: 1px;
+          }
+          &:nth-child(2) {
+            top: 10px;
+            right: 0;
+            width: 15px;
+            height: 1px;
+          }
+        }
+      }
     }
   }
 
