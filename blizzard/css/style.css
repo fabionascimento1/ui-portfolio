@@ -289,4 +289,19 @@ button {
           flex-direction: row;
   margin: 15px 10px 0 0;
 }
+
+.menu-toggle-close span:nth-child(1) {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  width: 19px !important;
+  right: 12 !important;
+  top: 10 !important;
+}
+
+.menu-toggle-close span:nth-child(2) {
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+  width: 19px !important;
+  right: 11 !important;
+}
 /*# sourceMappingURL=style.css.map */

@@ -1,4 +1,5 @@
 let EventLoop = 0
+
 function menuActive(){
   const menu = document.getElementById('menu-mobile')
   const btnMenuToggle = document.getElementById('btn-menu-toggle')
@@ -6,10 +7,12 @@ function menuActive(){
   if(EventLoop == 0){   
     menu.classList.add('menu-mobile-active')
     btnMenuToggle.title = 'close menu'
+    btnMenuToggle.classList.add('menu-toggle-close')
     EventLoop = 1
   } else {
     menu.classList.remove('menu-mobile-active')
     btnMenuToggle.title = 'open menu'
+    btnMenuToggle.classList.remove('menu-toggle-close')
     EventLoop = 0
   }
 }

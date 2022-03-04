@@ -179,3 +179,19 @@
     }
   }
 }
+
+.menu-toggle-close {
+  span {
+    &:nth-child(1) {
+      transform: rotate(135deg);
+      width: 19px !important;
+      right: 12 !important;
+      top: 10 !important;
+    }
+    &:nth-child(2) {
+      transform: rotate(-135deg);
+      width: 19px !important;
+      right: 11 !important;
+    }
+  }
+}
