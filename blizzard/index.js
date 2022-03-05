@@ -97,7 +97,7 @@ const Sgames = (
   <section className='s-games'>
     <div className='container'>
       <div className='s-games__header'>
-        <h2>Jogos exclusivos</h2>
+        <div className='s-games__header__title'><h2>Jogos exclusivos</h2></div>
         <ul>
           <li>
             <a href="#" className="active">
@@ -120,10 +120,67 @@ const Sgames = (
               </a>
           </li>
         </ul>
-        <a href="" className="s-games__header__allgames">
-            <img src="./assets/ver-todos.svg" alt="Ver todos" />
-            Ver todos jogos
-        </a>
+        <div className="s-games__header__allgames">
+          <a href="">
+              <img src="./assets/ver-todos.svg" alt="Ver todos" />
+              Ver todos jogos
+          </a>
+        </div>
+      </div>
+
+      <div className='s-games__cards'>
+        <div className='s-games__cards__card'>
+          <div class="s-games__cards__card__image">
+              <img src="./assets/card-game-01.jpg" alt="Diablo" />
+          </div>
+          <div class="s-games__cards__card__info">
+              <h3>Diablo II: Resurrected</h3>
+              <span>RPG de ação</span>
+          </div>
+        </div>
+
+        <div className='s-games__cards__card'>
+          <div class="s-games__cards__card__image">
+              <img src="./assets/card-game-02.jpg" alt="Diablo" />
+          </div>
+          <div class="s-games__cards__card__info">
+              <h3>Diablo II: Resurrected</h3>
+              <span>RPG de ação</span>
+          </div>
+        </div>
+
+        <div className='s-games__cards__card'>
+          <div class="s-games__cards__card__image">
+              <img src="./assets/card-game-03.jpg" alt="Diablo" />
+          </div>
+          <div class="s-games__cards__card__info">
+              <h3>Diablo II: Resurrected</h3>
+              <span>RPG de ação</span>
+          </div>
+        </div>
+
+        <div className='s-games__cards__card'>
+          <div class="s-games__cards__card__image">
+              <img src="./assets/card-game-04.jpg" alt="Diablo" />
+          </div>
+          <div class="s-games__cards__card__info">
+              <h3>Diablo II: Resurrected</h3>
+              <span>RPG de ação</span>
+          </div>
+        </div>
+
+        <div className='s-games__cards__card'>
+          <div class="s-games__cards__card__image">
+              <img src="./assets/card-game-05.jpg" alt="Diablo" />
+          </div>
+          <div class="s-games__cards__card__info">
+              <h3>Diablo II: Resurrected</h3>
+              <span>RPG de ação</span>
+          </div>
+        </div>
+
+        
+        
       </div>
     </div>
   </section>

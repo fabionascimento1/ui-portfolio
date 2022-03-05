@@ -316,6 +316,7 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 28px;
 }
 
 .s-games__header ul {
@@ -344,13 +345,68 @@ button {
   opacity: 1;
 }
 
-.s-games__header__allgames {
+.s-games__header__allgames a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.s-games__header__allgames img {
+.s-games__header__allgames a img {
   margin-right: 10px;
+}
+
+.s-games__cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 4.7rem 3.2rem;
+}
+
+.s-games__cards__card__image {
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.s-games__cards__card__image:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.s-games__cards__card__image img {
+  border-radius: 4px;
+}
+
+.s-games__cards__card__info {
+  margin-top: 18px;
+}
+
+@media (max-width: 1024px) {
+  .s-games__cards {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    grid-gap: 4rem 2.8rem;
+  }
+}
+
+@media (max-width: 612px) {
+  .s-games__header {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .s-games__header ul, .s-games__header__allgames {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .s-games__header__title {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .s-games__cards {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem 2rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
