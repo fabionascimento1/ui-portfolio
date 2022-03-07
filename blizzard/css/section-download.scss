@@ -1,0 +1,63 @@
+.s-downloads {
+  background: url("../assets/bg-section.png") no-repeat;
+  background-size: cover;
+  padding: 120px 0 100px;
+  margin: 67px 0;
+  position: relative;
+  justify-content: space-between;
+
+  &__dflex {
+    display: flex;
+
+    &__description {
+      width: 100%;
+      max-width: 280px;
+      h2 {
+        margin: 22px 0 46px 0;
+      }
+      ul {
+        li {
+          display: flex;
+          margin-bottom: 20px;
+          align-content: center;
+
+          .icon {
+            margin-right: 15px;
+          }
+          p {
+            color: $grayColor;
+          }
+        }
+      }
+      .btn-primary {
+        margin-left: 0px;
+        padding: 15px 0 15px 28px;
+      }
+      .app {
+        margin-top: 49px;
+        display: flex;
+        align-content: center;
+        img {
+          margin-right: 16px;
+          margin-left: 12px;
+        }
+      }
+    }
+    &__images {
+      position: absolute;
+      max-width: 106.6rem;
+      height: 61rem;
+      width: 100%;
+
+      .img-lg {
+        position: absolute;
+        right: -4rem;
+      }
+      .img-sm {
+        position: absolute;
+        top: 300px;
+        right: 0rem;
+      }
+    }
+  }
+}
