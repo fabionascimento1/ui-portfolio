@@ -505,7 +505,17 @@ button {
 .s-slide {
   position: relative;
   z-index: 2;
-  margin-bottom: 50px;
+}
+
+.s-slide__main .swiper-wrapper {
+  width: 100%;
+  height: 100vh;
+}
+
+@media (max-width: 612px) {
+  .s-slide__main .swiper-wrapper {
+    height: 45rem;
+  }
 }
 
 .s-slide__main .swiper-wrapper .swiper-slide {
@@ -623,16 +633,26 @@ button {
   margin-left: auto;
 }
 
+@media (max-width: 612px) {
+  .s-slide__main .swiper-wrapper .swiper-slide .container .right-content .logo img {
+    width: 54%;
+  }
+}
+
 .s-slide__main .swiper-wrapper .slide-01 {
   background: url("../assets/banner-slide-01.jpg") no-repeat center center;
   background-size: cover;
-  height: 100vh;
+}
+
+@media (max-width: 612px) {
+  .s-slide__main .swiper-wrapper .slide-01 {
+    background-position-x: 40%;
+  }
 }
 
 .s-slide__main .swiper-wrapper .slide-02 {
   background: url("../assets/banner-slide-02.jpg") no-repeat center center;
   background-size: cover;
-  height: 100vh;
 }
 
 .s-slide .swiper-pagination .swiper-pagination-bullet {

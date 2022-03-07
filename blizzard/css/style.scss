@@ -7,10 +7,16 @@
 .s-slide {
   position: relative;
   z-index: 2;
-  margin-bottom: 50px;
 
   &__main {
     .swiper-wrapper {
+      width: 100%;
+      height: 100vh;
+
+      @media (max-width: 612px) {
+        height: 45rem;
+      }
+
       .swiper-slide {
         padding-top: 20rem;
 
@@ -87,6 +93,9 @@
 
               img {
                 margin-left: auto;
+                @media (max-width: 612px) {
+                  width: 54%;
+                }
               }
             }
           }
@@ -95,13 +104,14 @@
       .slide-01 {
         background: url("../assets/banner-slide-01.jpg") no-repeat center center;
         background-size: cover;
-        height: 100vh;
+        @media (max-width: 612px) {
+          background-position-x: 40%;
+        }
       }
 
       .slide-02 {
         background: url("../assets/banner-slide-02.jpg") no-repeat center center;
         background-size: cover;
-        height: 100vh;
       }
     }
   }
