@@ -93,6 +93,58 @@ const Header = (
     </header>
 )
 
+const Sslide = (
+  <section className='s-slide'>
+    <div className='s-slide__main'>
+      <div className='swiper-wrapper'>
+
+        <div className="swiper-slide slide-01">
+          <div className="container">
+            <div className="left-content">
+                <h2>Retorna à escuridão com o game Diablo IV</h2>
+                  <p>O retorno de Lilith traz uma era de escuridão e sofrimento</p>
+                  <button className="btn btn-primary">
+                      <img src="./assets/icon-perfil.svg" alt="Icone de perfil" title="Icone de perfil" />
+                      Jogar agora
+                  </button>
+            </div>
+            <div className="right-content">
+                <div className="logo">
+                    <img src="./assets/logo-default-diablo-iv.png" alt="" />
+                </div>
+                <div className="video">
+                    <span>Assista o trailer</span>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="swiper-slide slide-02">
+          <div className="container">
+            <div className="left-content">
+                <h2>Novo pacote de expansão de Hearthstone</h2>
+                  <p>O retorno de Lilith traz uma era de escuridão e sofrimento</p>
+                  <button className="btn btn-primary">
+                      <img src="./assets/icon-perfil.svg" alt="Icone de perfil" title="Icone de perfil" />
+                      Jogar agora
+                  </button>
+            </div>
+            <div className="right-content">
+                <div className="logo">
+                    <img src="./assets/logo-default-diablo-iv.png" alt="" />
+                </div>
+                <div className="video">
+                    <span>Assista o trailer</span>
+                </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+)
+
 const Sgames = (
   <section className='s-games'>
     <div className='container'>
@@ -179,8 +231,47 @@ const Sgames = (
           </div>
         </div>
 
-        
-        
+      </div>
+    </div>
+  </section>
+)
+
+const Sdownloads = (
+  <section className='s-downloads'>
+    <div className='container s-downloads__dflex'>
+      <div className='s-downloads__dflex__description'>
+        <img src="./assets/battlenet.svg" alt="Battlenet" title="Battlenet" />
+        <h2>Baixe agora o battle.net</h2>
+        <ul>
+            <li>
+                <div className="icon">
+                    <img src="./assets/icon-seus-jogos.svg" alt="" />
+                </div>
+                <p>Seus jogos em um só lugar</p>
+            </li>
+            <li>
+                <div className="icon"><img src="./assets/icon-conect.svg" alt="" /></div>
+                <p>Conecte-se aos seus amigos</p>
+            </li>
+            <li>
+                <div className="icon"><img src="./assets/icon-buy.svg" alt="" /></div>
+                <p>Compre jogos e itens digitais</p>
+            </li>
+        </ul>
+        <a href="" className="btn btn-primary">
+            <div className="icon">
+                <img src="./assets/icon-apple.svg" alt="Apple" />
+            </div>
+            Baixar para o MacOS
+        </a>
+        <div className="app">
+            <img className="icon" src="./assets/icon-phone.svg" alt="" />
+            <p>Também disponível como <a href="#">aplicativo móvel</a></p>
+        </div>
+      </div>
+      <div className='s-downloads__dflex__images'>
+        <img src="./assets/image-download-lg.png" className="img-lg" alt="Imagem download" />
+        <img src="./assets/image-download-sm.png" className="img-sm" alt="Imagem download menor" />
       </div>
     </div>
   </section>
@@ -196,7 +287,9 @@ const page = (
   <div>
     {menuMobile}
     {Header}
+    {Sslide}
     {Sgames}
+    {Sdownloads}
     {Footer}
   </div>
 )

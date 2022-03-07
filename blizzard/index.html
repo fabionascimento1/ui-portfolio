@@ -27,14 +27,331 @@
   
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
-  <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
-  <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
-  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
   <title>Projeto realizado de front-end UI Figma para HTML e SCSS</title>
 </head>
 <body>
-  <div id="root"></div>
-  <script src="index.js" type="text/babel"></script>
+  <header>
+    <div class='container'>
+      <div class='header'>
+        <a href="index.html" class="logo">
+          <img src="./assets/logo.svg" alt="Logo da Blizzard" title="Logo da Blizzard" />
+        </a>
+        <nav>
+          <ul>
+            <li>
+              <a href="#">
+                Jogos
+                <img src="./assets/arrow-down.svg" alt="Icone de seta" title="Icone de seta" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Esportes
+                <img src="./assets/arrow-down.svg" alt="Icone de seta" title="Icone de seta" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Loja
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Notícias
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Suporte
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class='menu'>
+          <div class='btn-ctas'>
+            <a href="#" class="btn btn-outline">Criar conta</a>
+            <a href="#" class="btn btn-primary">
+              <img src="./assets/icon-perfil.svg" class="" alt="Icone de Login" title="Icone de Login" />
+              Logar
+            </a>
+          </div>
+          <div class='menu-toggle' id='div-menu-toogle'>
+            <button id='btn-menu-toggle' onclick="menuActive()" type='button' title='open menu'>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class='menu-mobile' id='menu-mobile'>
+    <div class='overlay'>
+      <aside>
+        <nav>
+          <ul>
+            <li>
+              <a href="#">
+                Jogos
+                <img src="./assets/arrow-down.svg" alt="Icone de seta" title="Icone de seta" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Esportes
+                <img src="./assets/arrow-down.svg" alt="Icone de seta" title="Icone de seta" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Loja
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Notícias
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Suporte
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class='btn-ctas'>
+          <a href="#" class="btn btn-outline">Criar conta</a>
+          <a href="#" class="btn btn-primary">
+            <img src="./assets/icon-perfil.svg" class="" alt="Icone de Login" title="Icone de Login" />
+            Logar
+          </a>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+ <section class='s-slide'>
+    <div class='s-slide__main'>
+      <div class='swiper-wrapper'>
+  
+        <div class="swiper-slide slide-01">
+          <div class="container">
+            <div class="left-content">
+              <h2>Retorna à escuridão com o game Diablo IV</h2>
+              <p>O retorno de Lilith traz uma era de escuridão e sofrimento</p>
+              <button class="btn btn-primary">
+                <img src="./assets/icon-perfil.svg" alt="Icone de perfil" title="Icone de perfil" />
+                Jogar agora
+              </button>
+            </div>
+            <div class="right-content">
+              <div class="logo">
+                <img src="./assets/logo-default-diablo-iv.png" alt="" />
+              </div>
+              <div class="video">
+                <span>Assista o trailer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="swiper-slide slide-02">
+          <div class="container">
+            <div class="left-content">
+              <h2>Novo pacote de expansão de Hearthstone</h2>
+              <p>O retorno de Lilith traz uma era de escuridão e sofrimento</p>
+              <button class="btn btn-primary">
+                <img src="./assets/icon-perfil.svg" alt="Icone de perfil" title="Icone de perfil" />
+                Jogar agora
+              </button>
+            </div>
+            <div class="right-content">
+              <div class="logo">
+                <img src="./assets/logo-default-diablo-iv.png" alt="" />
+              </div>
+              <div class="video">
+                <span>Assista o trailer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+
+  <!-- <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+    </div>
+  </div> -->
+  <section class='s-games'>
+    <div class='container'>
+      <div class='s-games__header'>
+        <div class='s-games__header__title'>
+          <h2>Jogos exclusivos</h2>
+        </div>
+        <ul>
+          <li>
+            <a href="#" class="active">
+              <img src="./assets/icon-logo.svg" alt="Battle net" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./assets/nintendo.svg" alt="Nintendo" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./assets/icon-xbox.svg" alt="XBOX" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./assets/ps.svg" alt="Playstion" />
+            </a>
+          </li>
+        </ul>
+        <div class="s-games__header__allgames">
+          <a href="">
+            <img src="./assets/ver-todos.svg" alt="Ver todos" />
+            Ver todos jogos
+          </a>
+        </div>
+      </div>
+  
+      <div class='s-games__cards'>
+        <div class='s-games__cards__card'>
+          <div class="s-games__cards__card__image">
+            <img src="./assets/card-game-01.jpg" alt="Diablo" />
+          </div>
+          <div class="s-games__cards__card__info">
+            <h3>Diablo II: Resurrected</h3>
+            <span>RPG de ação</span>
+          </div>
+        </div>
+  
+        <div class='s-games__cards__card'>
+          <div class="s-games__cards__card__image">
+            <img src="./assets/card-game-02.jpg" alt="Diablo" />
+          </div>
+          <div class="s-games__cards__card__info">
+            <h3>Diablo II: Resurrected</h3>
+            <span>RPG de ação</span>
+          </div>
+        </div>
+  
+        <div class='s-games__cards__card'>
+          <div class="s-games__cards__card__image">
+            <img src="./assets/card-game-03.jpg" alt="Diablo" />
+          </div>
+          <div class="s-games__cards__card__info">
+            <h3>Diablo II: Resurrected</h3>
+            <span>RPG de ação</span>
+          </div>
+        </div>
+  
+        <div class='s-games__cards__card'>
+          <div class="s-games__cards__card__image">
+            <img src="./assets/card-game-04.jpg" alt="Diablo" />
+          </div>
+          <div class="s-games__cards__card__info">
+            <h3>Diablo II: Resurrected</h3>
+            <span>RPG de ação</span>
+          </div>
+        </div>
+  
+        <div class='s-games__cards__card'>
+          <div class="s-games__cards__card__image">
+            <img src="./assets/card-game-05.jpg" alt="Diablo" />
+          </div>
+          <div class="s-games__cards__card__info">
+            <h3>Diablo II: Resurrected</h3>
+            <span>RPG de ação</span>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+
+  <section class='s-downloads'>
+    <div class='container s-downloads__dflex'>
+      <div class='s-downloads__dflex__description'>
+        <img src="./assets/battlenet.svg" alt="Battlenet" title="Battlenet" />
+        <h2>Baixe agora o battle.net</h2>
+        <ul>
+          <li>
+            <div class="icon">
+              <img src="./assets/icon-seus-jogos.svg" alt="" />
+            </div>
+            <p>Seus jogos em um só lugar</p>
+          </li>
+          <li>
+            <div class="icon"><img src="./assets/icon-conect.svg" alt="" /></div>
+            <p>Conecte-se aos seus amigos</p>
+          </li>
+          <li>
+            <div class="icon"><img src="./assets/icon-buy.svg" alt="" /></div>
+            <p>Compre jogos e itens digitais</p>
+          </li>
+        </ul>
+        <a href="" class="btn btn-primary">
+          <div class="icon">
+            <img src="./assets/icon-apple.svg" alt="Apple" />
+          </div>
+          Baixar para o MacOS
+        </a>
+        <div class="app">
+          <img class="icon" src="./assets/icon-phone.svg" alt="" />
+          <p>Também disponível como <a href="#">aplicativo móvel</a></p>
+        </div>
+      </div>
+      <div class='s-downloads__dflex__images'>
+        <img src="./assets/image-download-lg.png" class="img-lg" alt="Imagem download" />
+        <img src="./assets/image-download-sm.png" class="img-sm" alt="Imagem download menor" />
+      </div>
+    </div>
+  </section>
+
+  <script>
+
+    let EventLoop = 0
+
+      function menuActive() {
+  
+        const menu = document.getElementById('menu-mobile')
+        const btnMenuToggle = document.getElementById('btn-menu-toggle')
+
+        if (EventLoop == 0) {
+          menu.classList.add('menu-mobile-active')
+          btnMenuToggle.title = 'close menu'
+          btnMenuToggle.classList.add('menu-toggle-close')
+          EventLoop = 1
+        } else {
+          menu.classList.remove('menu-mobile-active')
+          btnMenuToggle.title = 'open menu'
+          btnMenuToggle.classList.remove('menu-toggle-close')
+          EventLoop = 0
+        }
+      }
+    const swiper = new Swiper('.s-slide__main', {
+        effect: 'fade',
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false
+        },
+      });
+      
+  </script>
 </body>
 
 </html>

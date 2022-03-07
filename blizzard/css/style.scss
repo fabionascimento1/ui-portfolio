@@ -1,4 +1,23 @@
 @import "global.scss";
 @import "container.scss";
 @import "header.scss";
-@import "session-games.scss";
+@import "section-games.scss";
+@import "section-download.scss";
+
+.s-slide {
+  &__main {
+    .swiper-wrapper {
+      .slide-01 {
+        background: url("../assets/banner-slide-01.jpg") no-repeat center center;
+        background-size: cover;
+        height: 100vh;
+      }
+
+      .slide-02 {
+        background: url("../assets/banner-slide-02.jpg") no-repeat center center;
+        background-size: cover;
+        height: 100vh;
+      }
+    }
+  }
+}
