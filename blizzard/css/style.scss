@@ -13,6 +13,51 @@
     .swiper-wrapper {
       .swiper-slide {
         padding-top: 20rem;
+
+        .container {
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+
+          .left-content {
+            margin-left: 5rem;
+            width: 100%;
+            max-width: 56.2rem;
+            h2 {
+              font-weight: bold;
+              font-size: 66px;
+              line-height: 83px;
+              margin-bottom: 1.6rem;
+            }
+            p {
+              font-style: normal;
+              font-weight: 500;
+              font-size: 15px;
+              margin-bottom: 3.2rem;
+            }
+            button {
+              align-items: center;
+              font-size: 17px;
+              padding: 20px 70px;
+            }
+          }
+          .right-content {
+            width: 100%;
+            max-width: 29.2rem;
+            display: flex;
+            flex-direction: column;
+
+            .logo {
+              width: 100%;
+              max-width: 28rem;
+              height: 18rem;
+
+              img {
+                margin-left: auto;
+              }
+            }
+          }
+        }
       }
       .slide-01 {
         background: url("../assets/banner-slide-01.jpg") no-repeat center center;
