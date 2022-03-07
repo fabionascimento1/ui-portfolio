@@ -1,0 +1,90 @@
+.s-games {
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 28px;
+
+    ul {
+      display: flex;
+      li {
+        margin-right: 20px;
+
+        .active img {
+          opacity: 1;
+        }
+        a {
+          cursor: pointer;
+
+          img {
+            opacity: 0.5;
+
+            &:hover {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+    &__allgames {
+      a {
+        display: flex;
+        img {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 4.7rem 3.2rem;
+
+    &__card {
+      &__image {
+        transition: all 0.3s ease-in;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+
+        img {
+          border-radius: 4px;
+        }
+      }
+      &__info {
+        margin-top: 18px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .s-games {
+    &__cards {
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 4rem 2.8rem;
+    }
+  }
+}
+
+@media (max-width: 612px) {
+  .s-games {
+    &__header {
+      flex-wrap: wrap;
+      ul,
+      &__allgames {
+        flex: 1;
+      }
+      &__title {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+    &__cards {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 3rem 2rem;
+    }
+  }
+}
