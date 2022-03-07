@@ -512,6 +512,12 @@ button {
   padding-top: 20rem;
 }
 
+@media (max-width: 612px) {
+  .s-slide__main .swiper-wrapper .swiper-slide {
+    padding-top: 12rem;
+  }
+}
+
 .s-slide__main .swiper-wrapper .swiper-slide .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -524,8 +530,17 @@ button {
           justify-content: space-between;
 }
 
+@media (max-width: 612px) {
+  .s-slide__main .swiper-wrapper .swiper-slide .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .s-slide__main .swiper-wrapper .swiper-slide .container .left-content {
-  margin-left: 5rem;
+  margin-left: 5%;
   width: 100%;
   max-width: 56.2rem;
 }
@@ -535,6 +550,22 @@ button {
   font-size: 66px;
   line-height: 83px;
   margin-bottom: 1.6rem;
+}
+
+@media (max-width: 1024px) {
+  .s-slide__main .swiper-wrapper .swiper-slide .container .left-content h2 {
+    font-size: 46px;
+    line-height: 68px;
+    margin-bottom: 1.2rem;
+  }
+}
+
+@media (max-width: 612px) {
+  .s-slide__main .swiper-wrapper .swiper-slide .container .left-content h2 {
+    font-size: 35px;
+    line-height: 45px;
+    margin-bottom: 0.8rem;
+  }
 }
 
 .s-slide__main .swiper-wrapper .swiper-slide .container .left-content p {
@@ -550,6 +581,18 @@ button {
           align-items: center;
   font-size: 17px;
   padding: 20px 70px;
+}
+
+@media (max-width: 1024px) {
+  .s-slide__main .swiper-wrapper .swiper-slide .container .left-content button {
+    padding: 15px 45px;
+  }
+}
+
+@media (max-width: 612px) {
+  .s-slide__main .swiper-wrapper .swiper-slide .container .left-content button {
+    padding: 15px 35px;
+  }
 }
 
 .s-slide__main .swiper-wrapper .swiper-slide .container .right-content {
@@ -568,6 +611,12 @@ button {
   width: 100%;
   max-width: 28rem;
   height: 18rem;
+}
+
+@media (max-width: 612px) {
+  .s-slide__main .swiper-wrapper .swiper-slide .container .right-content .logo {
+    margin-top: 40px;
+  }
 }
 
 .s-slide__main .swiper-wrapper .swiper-slide .container .right-content .logo img {

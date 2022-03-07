@@ -14,20 +14,41 @@
       .swiper-slide {
         padding-top: 20rem;
 
+        @media (max-width: 612px) {
+          padding-top: 12rem;
+        }
+
         .container {
           display: flex;
           align-items: flex-start;
           justify-content: space-between;
 
+          @media (max-width: 612px) {
+            flex-direction: column;
+          }
+
           .left-content {
-            margin-left: 5rem;
+            margin-left: 5%;
             width: 100%;
             max-width: 56.2rem;
+
             h2 {
               font-weight: bold;
               font-size: 66px;
               line-height: 83px;
               margin-bottom: 1.6rem;
+
+              @media (max-width: 1024px) {
+                font-size: 46px;
+                line-height: 68px;
+                margin-bottom: 1.2rem;
+              }
+
+              @media (max-width: 612px) {
+                font-size: 35px;
+                line-height: 45px;
+                margin-bottom: 0.8rem;
+              }
             }
             p {
               font-style: normal;
@@ -39,6 +60,14 @@
               align-items: center;
               font-size: 17px;
               padding: 20px 70px;
+
+              @media (max-width: 1024px) {
+                padding: 15px 45px;
+              }
+
+              @media (max-width: 612px) {
+                padding: 15px 35px;
+              }
             }
           }
           .right-content {
@@ -51,6 +80,10 @@
               width: 100%;
               max-width: 28rem;
               height: 18rem;
+
+              @media (max-width: 612px) {
+                margin-top: 40px;
+              }
 
               img {
                 margin-left: auto;
