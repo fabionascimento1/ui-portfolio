@@ -5,8 +5,15 @@
 @import "section-download.scss";
 
 .s-slide {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 50px;
+
   &__main {
     .swiper-wrapper {
+      .swiper-slide {
+        padding-top: 20rem;
+      }
       .slide-01 {
         background: url("../assets/banner-slide-01.jpg") no-repeat center center;
         background-size: cover;
@@ -20,4 +27,46 @@
       }
     }
   }
+  .swiper-pagination {
+    .swiper-pagination-bullet {
+      background: #fff;
+    }
+  }
+}
+
+.s-slide .swiper-progress-bar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: block;
+  z-index: 3;
+}
+.s-slide .swiper-progress-bar .slide-progress-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.3rem;
+  width: auto;
+  opacity: 0;
+  display: block;
+}
+.s-slide .swiper-progress-bar .slide-progress-bar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #00aeff;
+  height: 100%;
+  width: 0;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+.s-slide .swiper-progress-bar.active .slide-progress-bar {
+  opacity: 1;
+}
+.s-slide .swiper-progress-bar.animate .slide-progress-bar::after {
+  width: 100%;
+  transition: width 5s linear;
 }

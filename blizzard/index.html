@@ -35,8 +35,8 @@
 </head>
 <body>
   <header>
-    <div class='container'>
-      <div class='header'>
+    <div class='header'>
+      <div class='container'>
         <a href="index.html" class="logo">
           <img src="./assets/logo.svg" alt="Logo da Blizzard" title="Logo da Blizzard" />
         </a>
@@ -180,8 +180,11 @@
             </div>
           </div>
         </div>
-  
+        <div class="swiper-pagination"></div>
       </div>
+    </div>
+    <div class="swiper-progress-bar js-progress">
+      <span class="slide-progress-bar"></span>
     </div>
   </section>
 
@@ -326,31 +329,53 @@
 
     let EventLoop = 0
 
-      function menuActive() {
-  
-        const menu = document.getElementById('menu-mobile')
-        const btnMenuToggle = document.getElementById('btn-menu-toggle')
+    function menuActive() {
 
-        if (EventLoop == 0) {
-          menu.classList.add('menu-mobile-active')
-          btnMenuToggle.title = 'close menu'
-          btnMenuToggle.classList.add('menu-toggle-close')
-          EventLoop = 1
-        } else {
-          menu.classList.remove('menu-mobile-active')
-          btnMenuToggle.title = 'open menu'
-          btnMenuToggle.classList.remove('menu-toggle-close')
-          EventLoop = 0
-        }
+      const menu = document.getElementById('menu-mobile')
+      const btnMenuToggle = document.getElementById('btn-menu-toggle')
+
+      if (EventLoop == 0) {
+        menu.classList.add('menu-mobile-active')
+        btnMenuToggle.title = 'close menu'
+        btnMenuToggle.classList.add('menu-toggle-close')
+        EventLoop = 1
+      } else {
+        menu.classList.remove('menu-mobile-active')
+        btnMenuToggle.title = 'open menu'
+        btnMenuToggle.classList.remove('menu-toggle-close')
+        EventLoop = 0
       }
+    }
+    
+    const progressSlide = document.querySelector('.js-progress')
+
     const swiper = new Swiper('.s-slide__main', {
         effect: 'fade',
         autoplay: {
           delay: 5000,
           disableOnInteraction: false
         },
+        pagination: {
+          el: '.swiper-pagination',
+        },
+        on: {
+        init: function () {
+          progressSlide.classList.remove('animate');
+          progressSlide.classList.remove('active');
+          progressSlide.classList.add('animate');
+          progressSlide.classList.add('active');
+        },
+        slideChangeTransitionStart: function () {
+          progressSlide.classList.remove('animate');
+          progressSlide.classList.remove('active');
+          progressSlide.classList.add('active');
+        },
+        slideChangeTransitionEnd: function () {
+          progressSlide.classList.add('animate');
+        }
+      }
       });
-      
+    
   </script>
 </body>
 

@@ -85,46 +85,58 @@ button {
 }
 
 .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  height: 5.6rem;
+  border-bottom: 1.5px solid rgba(255, 255, 255, 0.1);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 25px 0px;
 }
 
-.header nav {
-  margin-left: 145px;
-}
-
-.header nav ul {
+.header .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.header nav ul li {
+.header .container nav {
+  margin-left: 145px;
+}
+
+.header .container nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .container nav ul li {
   margin-right: 20px;
 }
 
-.header nav ul li a {
+.header .container nav ul li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-size: 14px;
 }
 
-.header nav ul li a img {
+.header .container nav ul li a img {
   margin-left: 10px;
 }
 
-.header nav ul li a:hover {
+.header .container nav ul li a:hover {
   opacity: 0.9;
   text-decoration: underline;
 }
 
-.header .menu {
+.header .container .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -134,50 +146,50 @@ button {
           align-items: center;
 }
 
-.header .menu .btn-ctas {
+.header .container .menu .btn-ctas {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.header .menu .menu-toggle {
+.header .container .menu .menu-toggle {
   display: none;
   width: 19px;
   height: 20px;
   margin-left: 150px;
 }
 
-.header .menu .menu-toggle button {
+.header .container .menu .menu-toggle button {
   position: relative;
   width: 19px;
   height: 20px;
 }
 
-.header .menu .menu-toggle button:hover span {
+.header .container .menu .menu-toggle button:hover span {
   background-color: #00aeff;
 }
 
-.header .menu .menu-toggle button:hover span:nth-child(1) {
+.header .container .menu .menu-toggle button:hover span:nth-child(1) {
   width: 15px;
 }
 
-.header .menu .menu-toggle button:hover span:nth-child(2) {
+.header .container .menu .menu-toggle button:hover span:nth-child(2) {
   width: 19px;
 }
 
-.header .menu .menu-toggle button span {
+.header .container .menu .menu-toggle button span {
   background-color: #fff;
   position: absolute;
 }
 
-.header .menu .menu-toggle button span:nth-child(1) {
+.header .container .menu .menu-toggle button span:nth-child(1) {
   top: 0;
   right: 0;
   width: 19px;
   height: 1px;
 }
 
-.header .menu .menu-toggle button span:nth-child(2) {
+.header .container .menu .menu-toggle button span:nth-child(2) {
   top: 10px;
   right: 0;
   width: 15px;
@@ -185,24 +197,24 @@ button {
 }
 
 @media (max-width: 1024px) {
-  .header nav {
+  .header .container nav {
     display: none;
   }
-  .header .menu .menu-toggle {
+  .header .container .menu .menu-toggle {
     display: block;
     margin-left: 120px;
   }
 }
 
 @media (max-width: 600px) {
-  .header nav {
+  .header .container nav {
     display: none;
   }
-  .header .menu .btn,
-  .header .menu .btn-primary {
+  .header .container .menu .btn,
+  .header .container .menu .btn-primary {
     display: none;
   }
-  .header .menu .btn-mobile {
+  .header .container .menu .btn-mobile {
     display: block;
     margin-left: 0px;
   }
@@ -490,6 +502,16 @@ button {
   right: 0rem;
 }
 
+.s-slide {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 50px;
+}
+
+.s-slide__main .swiper-wrapper .swiper-slide {
+  padding-top: 20rem;
+}
+
 .s-slide__main .swiper-wrapper .slide-01 {
   background: url("../assets/banner-slide-01.jpg") no-repeat center center;
   background-size: cover;
@@ -500,5 +522,51 @@ button {
   background: url("../assets/banner-slide-02.jpg") no-repeat center center;
   background-size: cover;
   height: 100vh;
+}
+
+.s-slide .swiper-pagination .swiper-pagination-bullet {
+  background: #fff;
+}
+
+.s-slide .swiper-progress-bar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: block;
+  z-index: 3;
+}
+
+.s-slide .swiper-progress-bar .slide-progress-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.3rem;
+  width: auto;
+  opacity: 0;
+  display: block;
+}
+
+.s-slide .swiper-progress-bar .slide-progress-bar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #00aeff;
+  height: 100%;
+  width: 0;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.s-slide .swiper-progress-bar.active .slide-progress-bar {
+  opacity: 1;
+}
+
+.s-slide .swiper-progress-bar.animate .slide-progress-bar::after {
+  width: 100%;
+  -webkit-transition: width 5s linear;
+  transition: width 5s linear;
 }
 /*# sourceMappingURL=style.css.map */
