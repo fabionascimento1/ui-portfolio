@@ -95,15 +95,15 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .header .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header .container nav {
@@ -548,7 +548,7 @@ button {
   display: block;
 }
 
-.s-slide .swiper-progress-bar .slide-progress-bar::after {
+.s-slide .swiper-progress-bar .slide-progress-bar:after {
   content: "";
   position: absolute;
   top: 0;
