@@ -374,7 +374,7 @@
       const animationClass = 'animate-title'
 
       function animateScroll () {
-        const windowTop = window.pageYOffset
+        const windowTop = window.pageYOffset - ((window.innerHeight * 3) / 5)
   
         if(windowTop > titleDownload.offsetTop)
           titleDownload.classList.add(animationClass)
