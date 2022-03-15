@@ -710,6 +710,12 @@ button {
   transition: width 5s linear;
 }
 
+.animate-title {
+  opacity: 1 !important;
+  -webkit-transform: translate3d(0px, 0, 0) !important;
+          transform: translate3d(0px, 0, 0) !important;
+}
+
 @-webkit-keyframes float {
   0% {
     -webkit-transform: translateY(0px);
@@ -738,11 +744,5 @@ button {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
   }
-}
-
-.animate-title {
-  opacity: 1 !important;
-  -webkit-transform: translate3d(0px, 0, 0) !important;
-          transform: translate3d(0px, 0, 0) !important;
 }
 /*# sourceMappingURL=style.css.map */

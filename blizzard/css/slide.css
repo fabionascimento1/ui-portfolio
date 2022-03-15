@@ -1,0 +1,205 @@
+.s-slide {
+  position: relative;
+  z-index: 2;
+}
+
+.s-slide__main .swiper-wrapper {
+  width: 100%;
+  height: 100vh;
+}
+
+@media (max-width: 612px) {
+  .s-slide__main .swiper-wrapper {
+    height: 45rem;
+  }
+}
+
+.s-slide__main .swiper-wrapper .swiper-slide {
+  padding-top: 20rem;
+}
+
+@media (max-width: 612px) {
+  .s-slide__main .swiper-wrapper .swiper-slide {
+    padding-top: 12rem;
+  }
+}
+
+.s-slide__main .swiper-wrapper .swiper-slide .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 612px) {
+  .s-slide__main .swiper-wrapper .swiper-slide .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.s-slide__main .swiper-wrapper .swiper-slide .container .left-content {
+  margin-left: 5%;
+  width: 100%;
+  max-width: 56.2rem;
+}
+
+.s-slide__main .swiper-wrapper .swiper-slide .container .left-content h2 {
+  font-weight: bold;
+  font-size: 66px;
+  line-height: 83px;
+  margin-bottom: 1.6rem;
+}
+
+@media (max-width: 1024px) {
+  .s-slide__main .swiper-wrapper .swiper-slide .container .left-content h2 {
+    font-size: 46px;
+    line-height: 68px;
+    margin-bottom: 1.2rem;
+  }
+}
+
+@media (max-width: 612px) {
+  .s-slide__main .swiper-wrapper .swiper-slide .container .left-content h2 {
+    font-size: 35px;
+    line-height: 45px;
+    margin-bottom: 0.8rem;
+  }
+}
+
+.s-slide__main .swiper-wrapper .swiper-slide .container .left-content p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  margin-bottom: 3.2rem;
+}
+
+.s-slide__main .swiper-wrapper .swiper-slide .container .left-content button {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 17px;
+  padding: 20px 70px;
+}
+
+@media (max-width: 1024px) {
+  .s-slide__main .swiper-wrapper .swiper-slide .container .left-content button {
+    padding: 15px 45px;
+  }
+}
+
+@media (max-width: 612px) {
+  .s-slide__main .swiper-wrapper .swiper-slide .container .left-content button {
+    padding: 15px 35px;
+  }
+}
+
+.s-slide__main .swiper-wrapper .swiper-slide .container .right-content {
+  width: 100%;
+  max-width: 29.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.s-slide__main .swiper-wrapper .swiper-slide .container .right-content .logo {
+  width: 100%;
+  max-width: 28rem;
+  height: 18rem;
+}
+
+@media (max-width: 612px) {
+  .s-slide__main .swiper-wrapper .swiper-slide .container .right-content .logo {
+    margin-top: 40px;
+  }
+}
+
+.s-slide__main .swiper-wrapper .swiper-slide .container .right-content .logo img {
+  margin-left: auto;
+}
+
+@media (max-width: 612px) {
+  .s-slide__main .swiper-wrapper .swiper-slide .container .right-content .logo img {
+    width: 54%;
+  }
+}
+
+.s-slide__main .swiper-wrapper .slide-01 {
+  background: url("../assets/banner-slide-01.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+@media (max-width: 612px) {
+  .s-slide__main .swiper-wrapper .slide-01 {
+    background-position-x: 40%;
+  }
+}
+
+.s-slide__main .swiper-wrapper .slide-02 {
+  background: url("../assets/banner-slide-02.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.s-slide .swiper-pagination .swiper-pagination-bullet {
+  background: #fff;
+}
+
+.s-slide .swiper-progress-bar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: block;
+  z-index: 3;
+}
+
+.s-slide .swiper-progress-bar .slide-progress-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.3rem;
+  width: auto;
+  opacity: 0;
+  display: block;
+}
+
+.s-slide .swiper-progress-bar .slide-progress-bar:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #00aeff;
+  height: 100%;
+  width: 0;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.s-slide .swiper-progress-bar.active .slide-progress-bar {
+  opacity: 1;
+}
+
+.s-slide .swiper-progress-bar.animate .slide-progress-bar::after {
+  width: 100%;
+  -webkit-transition: width 5s linear;
+  transition: width 5s linear;
+}
+
+.animate-title {
+  opacity: 1 !important;
+  -webkit-transform: translate3d(0px, 0, 0) !important;
+          transform: translate3d(0px, 0, 0) !important;
+}
+/*# sourceMappingURL=slide.css.map */
