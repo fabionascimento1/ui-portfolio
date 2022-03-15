@@ -1,10 +1,15 @@
 .s-games {
+  margin-top: 72px;
   &__header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 28px;
-
+    &__title {
+      h2 {
+        font-size: 40px;
+      }
+    }
     ul {
       display: flex;
       li {
@@ -62,6 +67,13 @@
 
 @media (max-width: 1024px) {
   .s-games {
+    &__header {
+      &__title {
+        h2 {
+          font-size: 30px;
+        }
+      }
+    }
     &__cards {
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 4rem 2.8rem;
@@ -73,6 +85,11 @@
   .s-games {
     &__header {
       flex-wrap: wrap;
+      &__title {
+        h2 {
+          font-size: 28px;
+        }
+      }
       ul,
       &__allgames {
         flex: 1;

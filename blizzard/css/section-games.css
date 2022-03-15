@@ -1,3 +1,7 @@
+.s-games {
+  margin-top: 72px;
+}
+
 .s-games__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9,6 +13,10 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 28px;
+}
+
+.s-games__header__title h2 {
+  font-size: 40px;
 }
 
 .s-games__header ul {
@@ -74,6 +82,9 @@
 }
 
 @media (max-width: 1024px) {
+  .s-games__header__title h2 {
+    font-size: 30px;
+  }
   .s-games__cards {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
@@ -85,6 +96,9 @@
   .s-games__header {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .s-games__header__title h2 {
+    font-size: 28px;
   }
   .s-games__header ul, .s-games__header__allgames {
     -webkit-box-flex: 1;
