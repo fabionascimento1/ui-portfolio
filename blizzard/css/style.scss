@@ -5,3 +5,70 @@
 @import "section-download.scss";
 @import "slide.scss";
 @import "animate.scss";
+
+@media (max-width: 1250px) {
+  .s-downloads {
+    &__dflex {
+      &__images {
+        .img-lg {
+          right: -13rem;
+        }
+        .img-sm {
+          right: -5rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .s-downloads {
+    &__dflex {
+      &__images {
+        .img-lg {
+          right: -20rem;
+        }
+        .img-sm {
+          right: -12rem;
+          top: 300px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .s-downloads {
+    height: auto;
+    padding-bottom: 5rem;
+
+    &__dflex {
+      flex-direction: column;
+
+      &__description {
+        margin: 0 auto;
+        margin-bottom: 40px;
+
+        ul {
+          li {
+            margin-bottom: 35px;
+          }
+        }
+      }
+      &__images {
+        position: relative;
+        max-width: 100%;
+        width: 100%;
+        .img-lg {
+          right: 0rem;
+        }
+        .img-sm {
+          top: 150px;
+          right: 0;
+          bottom: 0;
+          max-width: 27.6rem;
+        }
+      }
+    }
+  }
+}
