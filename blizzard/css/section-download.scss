@@ -52,11 +52,13 @@
       .img-lg {
         position: absolute;
         right: -4rem;
+        animation: float 8s ease-in-out infinite;
       }
       .img-sm {
         position: absolute;
         top: 300px;
         right: 0rem;
+        animation: float 6s ease-in-out infinite;
       }
     }
   }

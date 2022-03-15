@@ -494,12 +494,16 @@ button {
 .s-downloads__dflex__images .img-lg {
   position: absolute;
   right: -4rem;
+  -webkit-animation: float 8s ease-in-out infinite;
+          animation: float 8s ease-in-out infinite;
 }
 
 .s-downloads__dflex__images .img-sm {
   position: absolute;
   top: 300px;
   right: 0rem;
+  -webkit-animation: float 6s ease-in-out infinite;
+          animation: float 6s ease-in-out infinite;
 }
 
 .s-slide {
@@ -699,5 +703,35 @@ button {
   width: 100%;
   -webkit-transition: width 5s linear;
   transition: width 5s linear;
+}
+
+@-webkit-keyframes float {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes float {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
 }
 /*# sourceMappingURL=style.css.map */
