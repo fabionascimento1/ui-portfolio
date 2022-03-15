@@ -446,6 +446,11 @@ button {
 
 .s-downloads__dflex__description h2 {
   margin: 22px 0 46px 0;
+  opacity: 0;
+  -webkit-transition: 3s;
+  transition: 3s;
+  -webkit-transform: translate3d(-50px, 0, 0);
+          transform: translate3d(-50px, 0, 0);
 }
 
 .s-downloads__dflex__description ul li {
@@ -733,5 +738,11 @@ button {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
   }
+}
+
+.animate-title {
+  opacity: 1 !important;
+  -webkit-transform: translate3d(0px, 0, 0) !important;
+          transform: translate3d(0px, 0, 0) !important;
 }
 /*# sourceMappingURL=style.css.map */

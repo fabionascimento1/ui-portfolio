@@ -16,7 +16,6 @@
       @media (max-width: 612px) {
         height: 45rem;
       }
-
       .swiper-slide {
         padding-top: 20rem;
 
@@ -169,4 +168,9 @@
   100% {
     transform: translateY(0px);
   }
+}
+
+.animate-title {
+  opacity: 1 !important;
+  transform: translate3d(0px, 0, 0) !important;
 }

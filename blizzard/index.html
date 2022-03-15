@@ -284,7 +284,7 @@
     <div class='container s-downloads__dflex'>
       <div class='s-downloads__dflex__description'>
         <img src="./assets/battlenet.svg" alt="Battlenet" title="Battlenet" />
-        <h2>Baixe agora o battle.net</h2>
+        <h2 id="show-title">Baixe agora o battle.net</h2>
         <ul>
           <li>
             <div class="icon">
@@ -369,6 +369,22 @@
         }
       }
       });
+
+      const titleDownload = document.getElementById('show-title')
+      const animationClass = 'animate-title'
+
+      function animateScroll () {
+        const windowTop = window.pageYOffset
+  
+        if(windowTop > titleDownload.offsetTop)
+          titleDownload.classList.add(animationClass)
+        else
+          titleDownload.classList.remove(animationClass)
+      }
+
+      window.addEventListener('scroll', function() {
+        animateScroll()
+      })
     
   </script>
 </body>
